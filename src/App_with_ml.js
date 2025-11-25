@@ -172,10 +172,10 @@ export default function App_TF() {
       <table className="table">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Inventory</th>
-            <th>Avg Sales</th>
-            <th>Lead Time</th>
+            <th>Product Name</th>
+            <th>Current Inventory Level</th>
+            <th>Average Sales per Week</th>
+            <th>Days to Replenish the Product</th>
             <th>Suggestion</th>
           </tr>
         </thead>
