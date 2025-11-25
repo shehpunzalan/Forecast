@@ -1,0 +1,104 @@
+/* Light palette with white background (eye-friendly) */
+:root {
+  --bg: #f7f7f7;
+  --card-bg: #ffffff;
+  --accent: #2b6cb0;
+  --accent-light: #4a90e2;
+  --text: #1a1a1a;
+  --ok-bg: #e6ffed;
+  --ok-text: #2f855a;
+  --reorder-bg: #ffe6e6;
+  --reorder-text: #c53030;
+  --table-header: #f0f0f0;
+  --table-border: #d9d9d9;
+  --canvas-bg: #ffffff;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.toggle-label {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.status-ok {
+  background: var(--ok-bg);
+  color: var(--ok-text);
+  padding: 6px 14px;
+  border-radius: 18px;
+  font-weight: 600;
+}
+
+.status-reorder {
+  background: var(--reorder-bg);
+  color: var(--reorder-text);
+  padding: 6px 14px;
+  border-radius: 18px;
+  font-weight: 600;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  background: var(--card-bg);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.table thead tr {
+  background: var(--table-header);
+  border-bottom: 2px solid var(--table-border);
+}
+
+.table th, .table td {
+  padding: 12px;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid var(--table-border);
+}
+
+.canvas-box {
+  background: var(--canvas-bg);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 0;
+}
+
+.canvas-title {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.canvas-label {
+  color: var(--accent-light);
+  margin-top: 4px;
+  font-size: 13px;
+}
