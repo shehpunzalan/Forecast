@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState, useRef } from "react";
 import * as tf from "@tensorflow/tfjs";
-import "./App_with_ml.css";
+import "./App.css";
 
 const rnd = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
@@ -153,11 +153,9 @@ export default function App_TF() {
 
       <div className="card">
         <label className="toggle-label">
-          <input type="checkbox" checked={useML} onChange={(e) => setUseML(e.target.checked)} />
-          Use Machine Learning
         </label>
 
-        {loadingModel ? <div>Training model...</div> : <div>✔ Model Ready</div>}
+        {loadingModel ? <div>Training model...</div> : null}
 
         <div style={{ marginTop: 18 }}>
           <div className="canvas-title">Training Accuracy</div>
